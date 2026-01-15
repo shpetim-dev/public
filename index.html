@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>shpetim-dev — Portfolio</title>
+  <meta name="description" content="Portfolio of shpetim-dev" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#38bdf8;--text:#e6eef6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071026 0%,#0b1220 100%);color:var(--text);line-height:1.5}
+    .container{max-width:900px;margin:36px auto;padding:20px}
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    a{color:var(--accent);text-decoration:none}
+    .projects a{display:block;padding:10px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);margin-bottom:8px}
+    footer{color:var(--muted);font-size:13px;margin-top:20px;text-align:center}
+    .muted{color:var(--muted)}
+    @media (max-width:520px){.avatar{width:64px;height:64px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">SD</div>
+      <div>
+        <h1>Hi — I'm shpetim-dev</h1>
+        <p class="lead">I'm a developer who builds "web apps, APIs, and developer tools".</p>
+        <p style="margin:8px 0">
+          <a href="https://github.com/shpetim-dev" target="_blank">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> ·
+          <a href="mailto:shpetimdev@gmail.com">Email</a>
+        </p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>About me</h2>
+      <p class="muted">Location: Prishtina, Kosovo</p>
+      <p class="muted">Working on: React + Node apps · DevOps automation · ML prototypes</p>
+    </section>
+
+    <section class="card">
+      <h2>Featured Projects</h2>
+      <div class="projects">
+        <a href="https://github.com/shpetim-dev/project-one" target="_blank">
+          <strong>Project One</strong><br>
+          Short description: what it does and technologies used.
+        </a>
+        <a href="https://github.com/shpetim-dev/project-two" target="_blank">
+          <strong>Project Two</strong><br>
+          Short description: what it does and technologies used.
+        </a>
+        <a href="https://github.com/shpetim-dev/project-three" target="_blank">
+          <strong>Project Three</strong><br>
+          Short description: what it does and technologies used.
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skills & Tech</h2>
+      <div class="grid">
+        <div>
+          <strong>Languages</strong>
+          <p class="muted">JavaScript · TypeScript · Python</p>
+        </div>
+        <div>
+          <strong>Frameworks</strong>
+          <p class="muted">React · Node.js · Express</p>
+        </div>
+        <div>
+          <strong>Tools</strong>
+          <p class="muted">Git · Docker · CI/CD</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contact</h2>
+      <p class="muted">Feel free to reach out — I'm open to collaborating on projects and contract work.</p>
+      <p><a href="mailto:shpetimdev@gmail.com">shpetimdev@gmail.com</a></p>
+      <p class="muted">GitHub: <a href="https://github.com/shpetim-dev" target="_blank">@shpetim-dev</a></p>
+    </section>
+
+    <footer>
+      Last updated: 2026-01-15 · Built with a tiny static page
+    </footer>
+  </div>
+</body>
+</html>
